@@ -31,16 +31,6 @@
     "symfony/serializer": "^5.2"
   },
   "require-dev": {
-    "friendsofphp/php-cs-fixer": "^2.18",
-    "guzzlehttp/psr7": "^1.7.0",
-    "mockery/mockery": "^1.4",
-    "php-coveralls/php-coveralls": "^2.4",
-    "php-http/guzzle7-adapter": "^0.1.1",
-    "phpdocumentor/phpdocumentor": "^3.0.0",
-    "phpstan/phpstan": "^0.12.53",
-    "phpunit/php-code-coverage": "^9.2",
-    "phpunit/phpunit": "^9",
-    "squizlabs/php_codesniffer": "3.*"
   },
   "autoload": {
     "psr-4": {
@@ -54,12 +44,6 @@
         }
   },
   "scripts": {
-    "lint": "composer phpcs-fixer && composer phpcs && composer phpstan",
-    "test": "./vendor/bin/phpunit",
-    "phpstan": "./vendor/bin/phpstan analyse src --level 5",
-    "phpcs": "./vendor/bin/phpcs --standard=PSR2 src",
-    "phpcs-fixer": "./vendor/bin/php-cs-fixer fix -vv --config=.php-cs-fixer.dist.php",
-    "gen:docs": "./vendor/bin/phpdoc -d src -t docs/shipengine-php-docs"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
